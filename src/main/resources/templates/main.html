@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <title>Random Shiba-Inu Pictures</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}" />
+
+</head>
+<body>
+<div id="warp">
+<input type="image" th:src="@{otherPic/reload.png}" onclick="location.href='newPicture'" width="500px" targ/>
+<br>
+<img th:src="@{shibaPic/}+${imgName}" width="500px"/><br>
+<div id="text"> I SAW <span 22f th:text="${count}"></span> SHIBA-INU!!!</div>
+</div>
+</body>
+</html>
